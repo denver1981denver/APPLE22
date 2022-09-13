@@ -49,14 +49,3 @@ p {
 	margin: 0 auto;
 	padding: 0 30px;
 }
-
-.navigation {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-}
-
-.navigation__list {
-	display: flex;
-	gap: 84px;
-}

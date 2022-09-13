@@ -9,8 +9,13 @@
 	margin-bottom: 45px;
 }
 
-.footer__navigation {
+.footer__list {
+	display: flex;
+	gap: 84px;
 	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
 }
 
 .footer__copyright {
