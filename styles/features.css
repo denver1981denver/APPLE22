@@ -1,0 +1,136 @@
+.features {
+  padding: 40px 0 80px;
+}
+
+.features__tagline {
+  line-height: 19px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.features__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: 54px;
+  text-align: center;
+  margin: 0 auto 24px;
+}
+
+.features__wrapper {
+  display: flex;
+}
+
+.features__image {
+  max-width: 230px;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.features__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features__item-title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.features__item-value {
+  min-width: 119px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: 750px) {
+  .features__wrapper {
+    flex-direction: column;
+  }
+
+  .features__title {
+    max-width: 290px;
+  }
+
+  .features__image {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+  .features__wrapper {
+    gap: 52px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .features__title {
+    margin-bottom: 30px;
+  }
+
+  .features__image {
+    max-width: 276px;
+  }
+
+  .features__item {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features {
+    padding: 100px 20px 140px;
+  }
+  .features__wrapper {
+    gap: 52px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .features__title {
+    margin-bottom: 30px;
+  }
+
+  .features__image {
+    max-width: 356px;
+  }
+
+  .features__item {
+    min-width: 336px;
+  }
+
+  .features__tagline {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .features__title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 56px;
+  }
+
+  .features__item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .features__item-value {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
