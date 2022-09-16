@@ -1,5 +1,5 @@
 .goods {
-	padding: 40px 0;
+  padding: 40px 0;
 }
 
 .goods__tagline {
@@ -44,7 +44,7 @@
   .goods__title {
     margin-bottom: 36px;
   }
-  
+
   .goods__helper {
     max-width: 700px;
     margin: 0 auto;
@@ -57,7 +57,7 @@
   .goods__arrow--pre {
     left: 10px;
   }
-  
+
   .goods__arrow--next {
     right: 10px;
   }
@@ -67,12 +67,12 @@
   .goods {
     padding: 70px 0;
   }
-  
+
   .goods__tagline {
     font-size: 20px;
     margin-bottom: 8px;
   }
-  
+
   .goods__title {
     font-size: 40px;
     margin-bottom: 40px;
@@ -91,7 +91,7 @@
   .goods__arrow--pre {
     left: 2px;
   }
-  
+
   .goods__arrow--next {
     right: 2px;
   }
@@ -105,7 +105,7 @@
   .goods__arrow--pre {
     left: 18px;
   }
-  
+
   .goods__arrow--next {
     right: 18px;
   }

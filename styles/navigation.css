@@ -1,29 +1,29 @@
 .navigation__list {
-	display: flex;
-	gap: 20px 50px;
+  display: flex;
+  gap: 20px 50px;
 }
 
 .navigation__list--column-mob {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .navigation__link {
-	transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .navigation__link:hover,
 .navigation__link:focus {
-	color: #2238FF;
+  color: #2238ff;
 }
 
 @media (min-width: 560px) {
-	.navigation__list {
-		flex-direction: row;
-	}
+  .navigation__list {
+  	flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
-	.navigation__list {
-		gap: 84px;
-	}
+  .navigation__list {
+  	gap: 84px;
+  }
 }

@@ -21,15 +21,30 @@
   font-size: 26px;
   margin-bottom: 24px;
 }
+
 .banner__timer {
   margin-bottom: 36px;
 }
+
 .banner__btn {
   padding: 16px 20px;
   border: 1px solid #70a5d5;
   border-radius: 32px;
   font-size: 14px;
   line-height: 100%;
+  transition-property: background-color, color;
+  transition-duration: 0, 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.banner__btn:hover,
+.banner__btn:focus {
+  background-color: #fff;
+}
+
+.banner__btn:active {
+  background-color: #2238ff;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +53,6 @@
     background: url("../img/bg-tab.jpg");
     background-position: center;
     background-size: contain;
-    
   }
   .banner__content {
     max-width: 331px;
@@ -76,19 +90,6 @@
 
   .banner__btn {
     font-size: 16px;
-    transition-property: background-color, color;
-    transition-duration: 0,1s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .banner__btn:hover,
-  .banner__btn:focus {
-    background-color: #fff;
-  }
-
-  .banner__btn:active {
-    background-color: #2238FF;
-    color: #fff;
   }
 }
 
@@ -98,6 +99,3 @@
     background-repeat: no-repeat;
   }
 }
-
-
-
