@@ -1,6 +1,7 @@
 .country__btn {
 	position: relative;
 	padding-right: 13px;
+	transition: color .3s ease-in-out;
 }
 
 .country__btn::after {
@@ -15,6 +16,11 @@
 	background-image: url("../img/arrow-down.svg");
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.country__btn:hover,
+.country__btn:focus {
+	color:#2238FF;
 }
 
 .country__list {

@@ -38,6 +38,7 @@
     background: url("../img/bg-tab.jpg");
     background-position: center;
     background-size: contain;
+    
   }
   .banner__content {
     max-width: 331px;
@@ -52,6 +53,7 @@
   .banner {
     padding: 120px 0 160px;
     background-image: url("../img/bg-laptop.jpg");
+    margin-bottom: 70px;
   }
 
   .banner__content {
@@ -74,12 +76,26 @@
 
   .banner__btn {
     font-size: 16px;
+    transition-property: background-color, color;
+    transition-duration: 0,1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .banner__btn:hover,
+  .banner__btn:focus {
+    background-color: #fff;
+  }
+
+  .banner__btn:active {
+    background-color: #2238FF;
+    color: #fff;
   }
 }
 
 @media (min-width: 1200px) {
   .banner {
     background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
   }
 }
 
