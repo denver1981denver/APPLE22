@@ -1,7 +1,5 @@
 import Swiper from "../lib/swiper-bundle.esm.browser.min.js";
 
-
-
 // simplebar
 new SimpleBar(document.querySelector(".country__list"), {
   classNames: {
@@ -137,23 +135,26 @@ const smothScroll = (trigger) => {
       if (hash === '#') return;
 
       const elem = document.querySelector(hash);
-      const coordinateElem = elem.getBoundingClientRect().top;
-      const allDistance = pageY + coordinateElem;
-      const scroll = time => {
-        if (!start) start = time;
-        const progress = time - start;
-        const r = (coordinateElem < 0 ?
-          Math.max(pageY - progress / SPEED, allDistance) :
-          Math.min(pageY + progress / SPEED, allDistance));
+      elem.scrollIntoView({
+        behavior: 'smooth'
+      });
+    //   const coordinateElem = elem.getBoundingClientRect().top;
+    //   const allDistance = pageY + coordinateElem;
+    //   const scroll = time => {
+    //     if (!start) start = time;
+    //     const progress = time - start;
+    //     const r = (coordinateElem < 0 ?
+    //       Math.max(pageY - progress / SPEED, allDistance) :
+    //       Math.min(pageY + progress / SPEED, allDistance));
 
-        window.scrollTo(0, r);
+    //     window.scrollTo(0, r);
 
-        const scrolling = coordinateElem < 0 ?
-          r > allDistance :
-          r < allDistance;
-        if (scrolling) requestAnimationFrame(scroll);
-      }
-      requestAnimationFrame(scroll)
+    //     const scrolling = coordinateElem < 0 ?
+    //       r > allDistance :
+    //       r < allDistance;
+    //     if (scrolling) requestAnimationFrame(scroll);
+    //   }
+    //   requestAnimationFrame(scroll)
     }
   }
   trigger.addEventListener('click', scrolled);

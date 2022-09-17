@@ -11,10 +11,14 @@
   transition: color 0.3s ease-in-out;
 }
 
+
+
 .navigation__link:hover,
 .navigation__link:focus {
   color: #2238ff;
 }
+
+
 
 @media (min-width: 560px) {
   .navigation__list {

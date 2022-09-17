@@ -207,8 +207,14 @@
               </ul>
             </div>
 
-            <button class="goods__arrow goods__arrow--prev"></button>
-            <button class="goods__arrow goods__arrow--next"></button>
+            <button class="goods__arrow goods__arrow--prev">
+              <svg width="13" height="8">
+                <use href="#arrow-blue" />
+              </svg>
+            </button>
+            <button class="goods__arrow goods__arrow--next">
+
+            </button>
           </div>
         </div>
       </section>
@@ -276,6 +282,27 @@
     <!-- /.footer -->
 
     <svg style="display: none">
+      <symbol id="arrow-left" width="68" height="68" viewBox="0 0 68 68" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="34" cy="30" r="30" fill="white" fill-opacity="0.6"/>
+        <circle cx="34" cy="30" r="29.5" stroke="#7883E6"/>
+  
+        <path d="M45.3737 30.7071C45.7642 30.3166 45.7642 29.6834 45.3737 29.2929L39.0097 22.9289C38.6192 22.5384 37.986 22.5384 37.5955 
+        22.9289C37.205 23.3195 37.205 23.9526 37.5955 24.3431L43.2524 30L37.5955 35.6569C37.205 36.0474 37.205 36.6805 37.5955 37.0711C37.986 
+        37.4616 38.6192 37.4616 39.0097 37.0711L45.3737 30.7071ZM23.3333 31H44.6666V29H23.3333V31Z"/>
+      </symbol>
+
+      <symbol id="arrow-right" width="90" height="90" viewBox="0 0 90 90" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="45" cy="45" r="45" fill="white" fill-opacity="0.6"/>
+        <circle cx="45" cy="45" r="44.5" stroke="#7883E6"/>
+        
+        <path d="M61.7071 45.7071C62.0976 45.3166 62.0976 44.6834 61.7071 44.2929L55.3431 37.9289C54.9526 
+        37.5384 54.3195 37.5384 53.9289 37.9289C53.5384 38.3195 53.5384 38.9526 53.9289 39.3431L59.5858 
+        45L53.9289 50.6569C53.5384 51.0474 53.5384 51.6805 53.9289 52.0711C54.3195 52.4616 54.9526 52.4616 
+        55.3431 52.0711L61.7071 45.7071ZM29 46H61V44H29V46Z"/>
+      </symbol>
+        
+
+
       <symbol id="arrow-blue" viewBox="0 0 13 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M12.3536 4.35355C12.5488 4.15829 12.5488 3.84171 12.3536 3.64645L9.17157 0.464466C8.97631 
         0.269204 8.65973 0.269204 8.46447 0.464466C8.2692 0.659728 8.2692 0.976311 8.46447 1.17157L11.2929 
@@ -283,6 +310,9 @@
         7.53553L12.3536 4.35355ZM0 4.5H12V3.5H0L0 4.5Z"/>
       </symbol>
     </svg>
+
+    
+      
 
     <div class="modal">
       <div class="modal__wrapper">
